@@ -42,7 +42,7 @@ async function checkUsernameFree(req, res, next) {
     "message": "Invalid credentials"
   }
 */
-async function checkUsernameExists(rew, res, next) {
+async function checkUsernameExists(req, res, next) {
   try {
     const users = await User.findBy({ username: req.body.username })
     if(!users.length) {
