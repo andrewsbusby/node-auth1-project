@@ -23,7 +23,7 @@ const server = express();
 
 server.use(session({
   name: 'chocolatechip',
-  secre: 'shh',
+  secret: 'shh',
   saveUninitialized: false,
   resave: false,
   store: new Store({
